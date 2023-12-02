@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    background: #FF0000;
+    height: 50px;
+    width: 100%;
+}
+label.logo{
+    color:aliceblue;
+    font-size: 35px;
+    line-height: 50px;
+    padding: 0 0px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: aliceblue;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active, a:hover{
+    background: #FF6666;
+    transition: 5s;
+
+}
+section{
+/*    background: url(img/bgimage.png) no-repeat;*/
+    background-size: cover;
+    height: calc(100vh - 50px);
+
+}
+/* end */
+
+section .parent{
+    /* background: blue; */
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+section .child1{
+    /* background: blueviolet; */
+    flex: 1;
+    border: 2px solid rgb(5, 0, 10); 
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+section .child2{
+    /* background: blueviolet; */
+    flex: 1;
+    /* background: #000000; */
+    margin: 10px;
+    text-align: center;
+}
+
+section .child1:first-child{
+    margin-right: 20px;
+}
+
+section .child2:first-child{
+    margin-right: 20px;
+}
+section .form{
+    width: 650px;
+    height: 150px;
+    /* background-color: red; */
+    /* Center vertically and horizontally */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+section .form p,input{
+    font-size: 25px;   
+    font-family: 'georgia';   
+    font-weight: bold;   
+    text-align: center;
+    padding: 5px;
+}
+#videos{
+    pointer-events: none;
+    background-color: #FF0000;
+    height:580px;
+    width:953px;
+    border: 5px solid #0000;
+    float:left;
+}
+#queue{
+   
+    background-color: #33ff00;
+    height:580px;
+    width:300px;
+    border: 5px solid #0000;
+    float: left;
+    text-align: center;
+}
+#score{
+    pointer-events: none;
+    background-color: #2600ff;
+    height:580px;
+    width:200px;
+    border: 5px solid #0000;
+    float: left;
+    text-align: center;
+}
+table, th, td {
+    width:300px;
+    border: 1px solid;
+    text-align: center;
+}
+
